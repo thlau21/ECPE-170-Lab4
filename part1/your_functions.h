@@ -11,13 +11,13 @@ int element;
 };
 
 // Students: Add the required functions for tree sort here...
-void inorder(struct BTreeNode *node, int *array);
+void inorder(struct BTreeNode *node, int *array, int* index);
 
 void insert_element(struct BTreeNode **node, int element);
 
 void tree_sort(int *array, int size);
 
-void free_btree(struct BTreeNode **node);
+void free_btree(struct BTreeNode **node, int size);
 
 void mergeSort(int *array_start, int *temp_array_start, int array_size);
 void mergeSort_sort(int *array_start, int *temp_array_start, int left, int right);
