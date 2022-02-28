@@ -9,7 +9,7 @@
 CFLAGS=-lm -c -Wall -std=c99 -O3 -g
 #
 # # All of the .h header files to use as dependencies
-# HEADERS=main.h image_template.h amplify.h
+HEADERS=main.h image_template.h amplify.h
 #
 # # All of the object files to produce as intermediary work
 OBJECTS=main.o
@@ -27,5 +27,5 @@ $(EXECUTABLE): $(OBJECTS)
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -o $@ $<
 clean:
-	rm $(EXECUTABLE) $(OBJECTS)
+	rm -rf *.o $(EXECUTABLE) $(OBJECTS)
 
