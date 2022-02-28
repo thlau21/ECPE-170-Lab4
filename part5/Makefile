@@ -27,5 +27,5 @@ $(EXECUTABLE): $(OBJECTS)
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -o $@ $<
 clean:
-	rm -rf *.o $(EXECUTABLE) $(OBJECTS)
+	rm -rf *.o *.pgm $(EXECUTABLE) $(OBJECTS)
 
